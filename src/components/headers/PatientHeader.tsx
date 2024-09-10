@@ -7,8 +7,13 @@ import DoctorIcon from '../../assets/Icon user md.svg'
 import ChatIcon from '../../assets/Icon comments.svg'
 import CalenderIcon from '../../assets/Icon calendar alt.svg'
 import ClossIcon from '../../assets/Icon times.svg'
+import { useNavigate } from "react-router-dom";
 
 const PatientHeader: React.FC = () => {
+    const navigate = useNavigate()
+    const handleClick = () => {
+        navigate('/auth'); 
+      };
 
     const [isSidebarOpen,setIsSidebarOpen]=useState(false);
 
@@ -57,7 +62,7 @@ const PatientHeader: React.FC = () => {
                 </ul>
 
                 {/* Profile Icon */}
-                <div className="flex items-center mr-3 md:mr-1 ">
+                <div className="flex items-center mr-3 md:mr-1 " onClick={handleClick}>
                     <img src={ProfileIcon} alt="Profile Icon" className="h-8 w-8" />
                 </div>
             </nav>

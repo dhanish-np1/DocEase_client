@@ -1,10 +1,8 @@
 import React from 'react'
-import PatientHeader from '../components/headers/PatientHeader'
 import { Outlet } from 'react-router-dom'
-const PatientLayout:React.FC=() =>{
+const AuthLayout:React.FC=() =>{
   return (
     <div>
-        <PatientHeader/>
         <main>
             <Outlet/>
         </main>
@@ -12,4 +10,4 @@ const PatientLayout:React.FC=() =>{
   )
 }
 
-export default PatientLayout
+export default AuthLayout
