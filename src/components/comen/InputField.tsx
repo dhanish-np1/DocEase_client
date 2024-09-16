@@ -1,4 +1,4 @@
-import { InputFieldProps } from "../../types/Patient";
+import { InputFieldProps } from "../../types/User";
 
 
 const InputField: React.FC<InputFieldProps> = ({
