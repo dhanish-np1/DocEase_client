@@ -9,10 +9,11 @@ import CalenderIcon from '../../assets/Icon calendar alt.svg'
 import ClossIcon from '../../assets/Icon times.svg'
 import { useNavigate } from "react-router-dom";
 
+
 const UserHeader: React.FC = () => {
     const navigate = useNavigate()
     const handleClick = () => {
-        navigate('/auth');
+        navigate('/auth/users/login');
     };
 
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);

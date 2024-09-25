@@ -7,7 +7,7 @@ const UserRoutes:React.FC=()=> {
   return (
     <Routes>
         <Route path='/' element={<UserLayout/>}>
-
+        
         </Route>
     </Routes>
   )
